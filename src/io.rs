@@ -33,14 +33,6 @@ impl UserInterface {
         self.window.mvprintw(row, column, content);
     }
 
-    pub fn add_string(&self, content: &str) {
-        self.window.addstr(content);
-    }
-
-    pub fn add_char(&self, content: char) {
-        self.window.addch(content);
-    }
-
     pub fn refresh(&self) {
         self.window.refresh();
     }
