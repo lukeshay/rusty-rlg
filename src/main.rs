@@ -13,7 +13,7 @@ mod keymaps;
 mod screens;
 
 fn main() {
-    let logging_file = rolling::minutely("./logs", "logs.log");
+    let logging_file = rolling::minutely("./target/logs", "logs.log");
 
     tracing_subscriber::fmt()
         .with_writer(logging_file)
